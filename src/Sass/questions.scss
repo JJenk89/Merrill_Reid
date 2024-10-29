@@ -1,0 +1,29 @@
+.question-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 50% auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    padding: 2rem;
+}
+
+.question {
+    margin: 2rem;
+}
+
+button {
+    background: none;
+    border: 1px solid blue;
+    cursor: pointer;
+}

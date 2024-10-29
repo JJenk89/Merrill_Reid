@@ -12,7 +12,7 @@ const Results: React.FC<ResultsProps> = ({ results }) => {
   }
 
   // Calculate the total count of responses
-  const totalResponses = Object.values(results).reduce((a: number, b: number) => a + b, 0);
+  const totalResponses: number = Object.values(results).reduce((a: number, b: number) => a + b, 0);
 
   return (
     <div>
@@ -20,7 +20,7 @@ const Results: React.FC<ResultsProps> = ({ results }) => {
       <div>
         {Object.entries(results).map(([category, count]: [string, number]) => {
           // Calculate the percentage for each category
-          const percentage = ((count / totalResponses) * 100).toFixed(0);
+          const percentage: string = ((count / totalResponses) * 100).toFixed(0);
 
           return (
             <div key={category}>
