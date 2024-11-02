@@ -1,4 +1,4 @@
-@import "./variables";
+@use "./variables";
 
 .question-wrapper {
     display: flex;
@@ -11,6 +11,11 @@
 
 h1 {
     margin-top: 5rem;
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 1.25rem;
 }
 
 form {
@@ -28,15 +33,95 @@ fieldset {
     -moz-box-shadow: 12px 15px 8px 0px rgba(0, 0, 0, 0.66);
     box-shadow: 12px 15px 8px 0px rgba(0, 0, 0, 0.66);
     border-radius: 5px;
+    position: relative;
+    transition: transform 250ms ease, opacity 250ms ease;
+    opacity: 1;
 }
+
+.slide-in {
+    transform: translateX(100%); // Starts from the right
+    opacity: 0;
+    animation: slideIn 250ms forwards;
+}
+
+.slide-out {
+    transform: translateX(-100%); // Slides out to the left
+    opacity: 0;
+    animation: slideOut 250ms forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+input[type="radio"] {
+    display: grid;
+    place-content: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    margin: 0;
+    font: inherit;
+    color: variables.$black;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgb(0 0 0 / 55%);;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  input[type="radio"]::before {
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em variables.$green;
+  }
+  
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+  
 
 .question {
     margin: 2rem;
 }
 
 .answer {
+    display: grid;
+    grid-template-columns: 1em 1em 1fr;
+    align-items: center;
+    align-content: center;
+    gap: 0.5em;
     margin: 1rem;
+    padding: 0.5rem;
     line-height: 25px;
+    /* border: 1px solid $green;
+    border-radius: 5px; */
+}
+
+.answer-letter {
+    font-weight: 800;
 }
 
 .button-field {
