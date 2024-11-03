@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import Results from "./Results";
 import { QType } from "../types/qtype.type";
 
+
 const Questions = ({data}: QType) => {
     const [index, setIndex] = useState<number>(0);
     const [question, setQuestion] = useState(data[index]);
