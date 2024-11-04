@@ -1,6 +1,7 @@
 import "../Sass/app.scss";
 import "../Sass/questions.scss";
 import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import Results from "./Results";
 import { QType } from "../types/qtype.type";
 
@@ -19,6 +20,8 @@ const Questions = ({data}: QType) => {
     const [selectedAnswers, setSelectedAnswers] = useState<{ [key: number]: string }>({});
     
     const qValueRef = useRef<string[]>([]);
+
+    const navigate = useNavigate();
 
     const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setIsRadioSelected(true);
@@ -108,6 +111,7 @@ const Questions = ({data}: QType) => {
 
         setResults(countObj);
         setIsDisabledPrev(true);
+        navigate('/results', { state: { results: countObj } });
     };
 
     return ( 
@@ -183,8 +187,8 @@ const Questions = ({data}: QType) => {
                 </form>
             </div>
 
-            <Results results={results}/>
-        </>
+{/*             <Results results={results}/>
+ */}        </>
     );
 }
 

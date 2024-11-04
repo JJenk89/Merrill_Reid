@@ -6,6 +6,18 @@ $font: "Kantumruy Pro", sans-serif;
 //
 $blue: rgb(26, 73, 98);
 $green: rgb(90, 135, 127);
-$purple: rgb(33, 1, 36);
+$light-green: rgb(130, 250, 156);
+$purple: rgb(111, 40, 183);
 $red: rgb(227, 23, 10);
 $black: rgb(11, 10, 7);
+
+//Mixins
+@mixin box {
+    background-color: rgba(26, 58, 34, 0.35);
+    -webkit-box-shadow: 12px 15px 8px 0px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 12px 15px 8px 0px rgba(0, 0, 0, 0.66);
+    box-shadow: 12px 15px 8px 0px rgba(0, 0, 0, 0.66);
+    border-radius: 5px;
+  }
+
+

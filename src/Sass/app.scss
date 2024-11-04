@@ -9,23 +9,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-wrap: pretty;
+    text-wrap: balance;
 }
 
 #root {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 }
 
 body {
     font-family: variables.$font;
-    background-color: rgb(4, 6, 102);
-    background: url("../assets/background.jpg") no-repeat center fixed;
+    background-color: rgba(38, 37, 37, 0.63);
+    background: url("../assets/background.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
     background-size: cover;
+    background-blend-mode: multiply;
+    color: white;
+    height: 100%;
+}
+
+a {
     color: white;
 }
 
-.overlay {
-    background-color: rgba(38, 37, 37, 0.63);
-    height: fit-content;
+a:visited {
+    color: variables.$light-green;
 }
