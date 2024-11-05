@@ -34,3 +34,54 @@ a {
 a:visited {
     color: variables.$light-green;
 }
+
+.type-description-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1, h3, p {
+        margin: 2rem auto;
+        text-align: center;
+        max-width: 65ch;
+        line-height: 24px;
+    }
+
+    ul {
+        padding: 1rem;
+        line-height: 24px;
+    }
+
+    p, ul {
+        @include variables.box;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+}
+
+.analytical-bkg {
+    background: url("../assets/analytical.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+.amiable-bkg {
+    background: url("../assets/amiable.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+.driver-bkg {
+    background: url("../assets/driver.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+.expressive-bkg {
+    background: url("../assets/expressive.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 100vh;
+}

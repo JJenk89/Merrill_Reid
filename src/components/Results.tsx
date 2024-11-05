@@ -48,7 +48,8 @@ const Results: React.FC<ResultsProps> = ({ results }) => {
       <div className="total-responses">
         Total responses: {totalResponses}
       </div>
-
+        <p>Check out the table below for a summary.</p>
+        <p>You can click the communication types in the table to get more detailed info and tips...</p>
     </div>
 
     <div className="table-container">
