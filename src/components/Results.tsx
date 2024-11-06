@@ -1,5 +1,9 @@
 import "../Sass/results.scss";
-import { Link } from "react-router-dom";
+import "../Sass/accordion.scss";
+
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { styleDetails } from "../data/styleDetails";
 
 interface ResultsObject {
   [key: string]: number;
@@ -10,140 +14,68 @@ interface ResultsProps {
 }
 
 const Results: React.FC<ResultsProps> = ({ results }) => {
+  const [openAccordion, setOpenAccordion] = useState<string | null>(null);
+
   if (Object.keys(results).length === 0) {
     return null;
   }
 
-  // Calculate the total count of responses
   const totalResponses: number = Object.values(results).reduce((a: number, b: number) => a + b, 0);
 
+  const toggleAccordion = (category: string) => {
+    setOpenAccordion(openAccordion === category ? null : category);
+  };
+
   return (
-    <>
     <div className="results-wrapper">
-      <h2>Your Results</h2>
+      <h1>Your Results</h1>
+      <p>Click on each style to find out their strengths and weaknesses</p>
       <div className="category-wrapper">
         {Object.entries(results).map(([category, count]: [string, number]) => {
-          // Calculate the percentage for each category
           const percentage: string = ((count / totalResponses) * 100).toFixed(0);
+          const details = styleDetails[category];
+          const isOpen = openAccordion === category;
 
           return (
-            <div 
-            className="result"
-            key={category}
-            >
-
-              <div className="category">
-                <span><strong>Category:</strong> {category}</span>
+            <div key={category} className="accordion-wrapper">
+              <div className="accordion-btns"
+                onClick={() => toggleAccordion(category)}
+                
+              >
+                <div>
+                  <div><strong>{category} {isOpen ? `-` : `+`}</strong></div>
+                  <div className="percentage"><strong>{percentage}%</strong></div>
+                  
+                </div>
               </div>
 
-              <div className="percentage">
-                <span><strong>{percentage}%</strong></span>
-              </div>
-              
+              {isOpen && (
+                <div className="strengths-weaknesses-div">
+                  <div className="strengths">
+                    <h3>Strengths</h3>
+                    <ul>
+                      {details.strengths.map((strength, index) => (
+                        <li key={index}>{strength}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div className="weaknesses">
+                    <h3>Weaknesses</h3>
+                    <ul>
+                      {details.weaknesses.map((weakness, index) => (
+                        <li key={index}>{weakness}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <Link to={`/${category}`}>Find out more</Link>
+                </div>
+              )}
             </div>
           );
         })}
       </div>
-
-      <div className="total-responses">
-        Total responses: {totalResponses}
-      </div>
-        <p>Check out the table below for a summary.</p>
-        <p>You can click the communication types in the table to get more detailed info and tips...</p>
     </div>
-
-    <div className="table-container">
-      <table>
-        <tr>
-          <th>Type</th>
-          <th>Strengths</th>
-          <th>Weaknesses</th>
-        </tr>
-        <tr> 
-          {/* ANALYTICAL */}
-          <td><Link to="/analytical">Analytical</Link></td>
-          {/* STRENGTHS */}
-          <td>
-            <ul>
-              <li>Thinking</li>
-              <li>Thorough</li>
-              <li>Disciplined</li>
-            </ul>
-          </td>
-          {/* WEAKNESSES */}
-          <td>
-            <ul>
-              <li>Excludes feelings from decisions</li>
-              <li>Goes too far and a perfectionist</li>
-              <li>Too demanding of self/others</li>
-            </ul>
-          </td>
-
-        </tr>
-        {/* AMIABLE */}
-        <tr>
-          <td><Link to="/amiable">Amiable</Link></td>
-
-          <td>
-            <ul>
-              <li>Supportive</li>
-              <li>Patient</li>
-              <li>Diplomatic</li>
-            </ul>
-          </td>
-
-          <td>
-            <ul>
-              <li>Tends to conform to others wishes</li>
-              <li>No time boundaries, struggles with getting things done</li>
-              <li>Not assertive</li>
-            </ul>
-          </td>
-
-        </tr>
-
-        <tr>
-          <td><Link to="/driver">Driver</Link></td>
-
-          <td>
-            <ul>
-              <li>Independent</li>
-              <li>Decisive</li>
-              <li>Determined</li>
-            </ul>
-          </td>
-
-          <td>
-            <ul>
-              <li>Has trouble working with others</li>
-              <li>Doesn't take time to consider other perspectives</li>
-              <li>Domineering: "My way or the highway"</li>
-            </ul>
-          </td>
-        </tr>
-
-        <tr>
-          <td><Link to="/expressive">Expressive</Link></td>
-          <td>
-            <ul>
-              <li>Good communicator</li>
-              <li>Imaginative</li>
-              <li>Enthusiastic</li>
-            </ul>
-          </td>
-
-          <td>
-            <ul>
-              <li>Talks too much</li>
-              <li>Comes on too strong</li>
-              <li>A dreamer - often unrealistic ideas</li>
-            </ul>
-          </td>
-        </tr>
-        
-      </table>
-    </div>
-    </>
   );
 };
 

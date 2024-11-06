@@ -2,7 +2,6 @@
 import "./Sass/app.scss";
 
 //components
-import Footer from "./components/Footer";
 import Error from "./components/ErrorPage";
 
 

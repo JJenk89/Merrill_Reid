@@ -32,7 +32,7 @@ a {
 }
 
 a:visited {
-    color: variables.$light-green;
+    color: whitesmoke;
 }
 
 .type-description-container {
@@ -43,14 +43,16 @@ a:visited {
     align-items: center;
 
     h1, h3, p {
-        margin: 2rem auto;
+        margin: 2rem 1rem;
         text-align: center;
         max-width: 65ch;
         line-height: 24px;
+        padding: 1rem;
     }
 
     ul {
         padding: 1rem;
+        margin: 0 1rem;
         line-height: 24px;
     }
 
@@ -61,27 +63,47 @@ a:visited {
     }
 }
 
+
 .analytical-bkg {
     background: url("../assets/analytical.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: 100vh;
+    height: fit-content;
 }
 .amiable-bkg {
     background: url("../assets/amiable.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: 100vh;
+    height: fit-content;
 }
 .driver-bkg {
     background: url("../assets/driver.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: 100vh;
+    height: fit-content;
 }
 .expressive-bkg {
-    background: url("../assets/expressive.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
+    background: url("../assets/expressive.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: 100vh;
+    height: fit-content;
+}
+
+@media screen and (min-height: 700px) {
+    .analytical-bkg {
+        
+        height: 100vh;
+    }
+    .amiable-bkg {
+        
+        height: 100vh;
+    }
+    .driver-bkg {
+        
+        height: 100vh;
+    }
+    .expressive-bkg {
+        
+        height: 100vh;
+    }
 }

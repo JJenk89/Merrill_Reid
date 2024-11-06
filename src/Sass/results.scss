@@ -3,50 +3,38 @@
 .results-wrapper {
     display: flex;
     flex-direction: column;
-    margin: 25vh auto;
     justify-content: center;
     align-items: center;
 
-    h2 {
+    h1 {
         font-size: 2.8rem;
+        margin: 1rem auto;
     }
 
+    p {
+        text-align: center;
+        margin: 1rem auto;
+    }
     
 }
 
 .category-wrapper {
     @include variables.box;
     width: 75vw;
-    max-height: 400px;
     max-width: 800px;
     border: 1px solid white;
     padding: 2rem;
     margin: 2rem auto;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     .result {
         padding: 1rem;
     }
     .percentage {
-        color: rgb(130, 250, 156);
-    }
-}
-
-.table-container {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-}
-
-table {
-    @include variables.box;
-    padding: 1rem;
-    border: 1px solid white;
-    max-width: 800px;
-    
-
-    td {
-        padding: 1rem;
-        border: 1px solid white;
+        color: variables.$light-green;
+        font-size: 1.2rem;
     }
 }

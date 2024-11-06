@@ -2,7 +2,6 @@ import "../Sass/app.scss";
 import "../Sass/questions.scss";
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import Results from "./Results";
 import { QType } from "../types/qtype.type";
 
 
@@ -187,8 +186,7 @@ const Questions = ({data}: QType) => {
                 </form>
             </div>
 
-{/*             <Results results={results}/>
- */}        </>
+       </>
     );
 }
 

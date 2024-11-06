@@ -8,10 +8,10 @@ export const data = [
         d: "I try to maintain eye contact, but look around from time to time"
       },
       values: {
-        a: "driver",
-        b: "amiable",
-        c: "analytical",
-        d: "expressive",
+        a: "Driver",
+        b: "Amiable",
+        c: "Analytical",
+        d: "Expressive",
       }
     },
     {
@@ -23,10 +23,10 @@ export const data = [
         d: "I run it by someone whose opinion I respect before deciding"
       },
       values: {
-        a: "analytical",
-        b: "driver",
-        c: "amiable",
-        d: "expressive",
+        a: "Analytical",
+        b: "Driver",
+        c: "Amiable",
+        d: "Expressive",
       }
     },
     {
@@ -38,10 +38,10 @@ export const data = [
         d: "Calenders and project outlines displayed"
       },
       values: {
-        a: "amiable",
-        b: "expressive",
-        c: "analytical",
-        d: "driver",
+        a: "Amiable",
+        b: "Expressive",
+        c: "Analytical",
+        d: "Driver",
       }
     },
     {
@@ -53,10 +53,10 @@ export const data = [
         d: "I confront it right away so that it can get resolved as soon as possible"
       },
       values: {
-        a: "expressive",
-        b: "amiable",
-        c: "analytical",
-        d: "driver",
+        a: "Expressive",
+        b: "Amiable",
+        c: "Analytical",
+        d: "Driver",
       }
     },
     {
@@ -68,10 +68,10 @@ export const data = [
         d: "I try to keep the conversation as brief as possible"
       },
       values: {
-        a: "driver",
-        b: "expressive",
-        c: "amiable",
-        d: "analytical",
+        a: "Driver",
+        b: "Expressive",
+        c: "Amiable",
+        d: "Analytical",
       }
     },
     {
@@ -83,10 +83,10 @@ export const data = [
         d: "I feel uncomfortable and hope they get over it soon"
       },
       values: {
-        a: "amiable",
-        b: "analytical",
-        c: "expressive",
-        d: "driver",
+        a: "Amiable",
+        b: "Analytical",
+        c: "Expressive",
+        d: "Driver",
       }
     },
     {
@@ -98,10 +98,10 @@ export const data = [
         d: "I try to support the ideas of the other people in the meeting"
       },
       values: {
-        a: "analytical",
-        b: "driver",
-        c: "expressive",
-        d: "amiable",
+        a: "Analytical",
+        b: "Driver",
+        c: "Expressive",
+        d: "Amiable",
       }
     },
     {
@@ -113,10 +113,10 @@ export const data = [
         d: "I am direct, specific, and sometimes loud"
       },
       values: {
-        a: "expressive",
-        b: "analytical",
-        c: "amiable",
-        d: "driver",
+        a: "Expressive",
+        b: "Analytical",
+        c: "Amiable",
+        d: "Driver",
       }
     },
     {
@@ -128,10 +128,10 @@ export const data = [
         d: "I use my body language and tone of voice to show them that I understand"
       },
       values: {
-        a: "amiable",
-        b: "analytical",
-        c: "driver",
-        d: "expressive",
+        a: "Amiable",
+        b: "Analytical",
+        c: "Driver",
+        d: "Expressive",
       }
     },
     {
@@ -143,10 +143,10 @@ export const data = [
         d: "I look for the logic behind what the speaker is saying"
       },
       values: {
-        a: "driver",
-        b: "amiable",
-        c: "expressive",
-        d: "analytical",
+        a: "Driver",
+        b: "Amiable",
+        c: "Expressive",
+        d: "Analytical",
       }
     },
     {
@@ -158,10 +158,10 @@ export const data = [
         d: "I explain the thinking and logic behind what I am saying"
       },
       values: {
-        a: "amiable",
-        b: "driver",
-        c: "expressive",
-        d: "analytical",
+        a: "Amiable",
+        b: "Driver",
+        c: "Expressive",
+        d: "Analytical",
       }
     },
     {
@@ -173,10 +173,10 @@ export const data = [
         d: "I apologise profusely once I arrive"
       },
       values: {
-        a: "analytical",
-        b: "amiable",
-        c: "driver",
-        d: "expressive",
+        a: "Analytical",
+        b: "Amiable",
+        c: "Driver",
+        d: "Expressive",
       }
     },
     {
@@ -188,10 +188,10 @@ export const data = [
         d: "Will make me feel good when I achieve them"
       },
       values: {
-        a: "analytical",
-        b: "expressive",
-        c: "driver",
-        d: "amiable",
+        a: "Analytical",
+        b: "Expressive",
+        c: "Driver",
+        d: "Amiable",
       }
     },
     {
@@ -203,10 +203,10 @@ export const data = [
         d: "I explain how I would like the problem to be solved"
       },
       values: {
-        a: "analytical",
-        b: "expressive",
-        c: "amiable",
-        d: "driver",
+        a: "Analytical",
+        b: "Expressive",
+        c: "Amiable",
+        d: "Driver",
       }
     },
     {
@@ -218,10 +218,10 @@ export const data = [
         d: "I get upset that the person is wasting my time"
       },
       values: {
-        a: "expressive",
-        b: "amiable",
-        c: "analytical",
-        d: "driver",
+        a: "Expressive",
+        b: "Amiable",
+        c: "Analytical",
+        d: "Driver",
       }
     },
     {
@@ -233,10 +233,10 @@ export const data = [
         d: "I set a date to get the project done by and go for it"
       },
       values: {
-        a: "analytical",
-        b: "driver",
-        c: "amiable",
-        d: "expressive",
+        a: "Analytical",
+        b: "Driver",
+        c: "Amiable",
+        d: "Expressive",
       }
     },
     {
@@ -248,10 +248,10 @@ export const data = [
         d: "I let them know in strong terms that I don't like their behaviour"
       },
       values: {
-        a: "driver",
-        b: "amiable",
-        c: "analytical",
-        d: "expressive",
+        a: "Driver",
+        b: "Amiable",
+        c: "Analytical",
+        d: "Expressive",
       }
     },
     {
@@ -263,10 +263,10 @@ export const data = [
         d: "I give them an enthusiastic handshake that lasts a few moments"
       },
       values: {
-        a: "amiable",
-        b: "analytical",
-        c: "driver",
-        d: "expressive",
+        a: "Amiable",
+        b: "Analytical",
+        c: "Driver",
+        d: "Expressive",
       }
     },
   ]

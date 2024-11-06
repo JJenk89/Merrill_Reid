@@ -1,0 +1,36 @@
+@use "./variables";
+
+
+
+.accordion-wrapper {
+    padding: 1em;
+    margin: 0.5em;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    
+    h4 {
+        padding: 1em;
+    }
+
+    ul {
+        margin: 1em;
+    }
+
+}
+
+.accordion-btns {
+    padding: 0.5em;
+}
+
+.strengths-weaknesses-div {
+    padding: 1rem;
+    line-height: 24px;
+    border: 1px solid variables.$green;
+    border-radius: 20px;
+}
+
+.strengths {
+    margin-bottom: 1rem;
+    
+}
