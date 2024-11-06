@@ -92,18 +92,26 @@ a:visited {
 @media screen and (min-height: 700px) {
     .analytical-bkg {
         background: url("../assets/analytical-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
+        background-size: cover;
+    background-blend-mode: multiply;
         height: 100vh;
     }
     .amiable-bkg {
         background: url("../assets/amiable-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
+        background-size: cover;
+    background-blend-mode: multiply;
         height: 100vh;
     }
     .driver-bkg {
         background: url("../assets/driver-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
+        background-size: cover;
+    background-blend-mode: multiply;
         height: 100vh;
     }
     .expressive-bkg {
         background: url("../assets/expressive-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
+        background-size: cover;
+    background-blend-mode: multiply;
         height: 100vh;
     }
 }
