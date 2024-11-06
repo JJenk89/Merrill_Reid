@@ -35,7 +35,7 @@ const ResultsWrapper = () => {
 const router = createBrowserRouter(
   createRoutesFromElements(
           <Route>   
-            <Route path="/" element={<Home />} />
+            <Route path="/Merrill_Reid" element={<Home />} />
             <Route path="/test" element={<Questions data={data}/>} errorElement={<Error />}/>
             <Route path="/results" element={<ResultsWrapper />} errorElement={<Error />}/>
             <Route path="/analytical" element={<Analytical />} errorElement={<Error />}/>

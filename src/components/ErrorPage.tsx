@@ -7,7 +7,7 @@ const Error = () => {
         <div className="error">
             <h1>Oops!</h1>
             <p>Something went wrong!</p>
-            <p>Click <Link to="/">here</Link> to return home</p>
+            <p>Click <Link to="/Merrill_Reid/">here</Link> to return home</p>
         </div>
      );
 }
