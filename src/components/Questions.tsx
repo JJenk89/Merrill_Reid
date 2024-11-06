@@ -11,9 +11,9 @@ const Questions = ({data}: QType) => {
     const [isDisabledNext, setIsDisabledNext] = useState<boolean>(true);
     const [isDisabledPrev, setIsDisabledPrev] = useState<boolean>(true);
     const [isDisabledSubmit, setIsDisabledSubmit] = useState<boolean>(true);
-    const [results, setResults] = useState({});
+    const [, setResults] = useState({});
     const [animationClass, setAnimationClass] = useState<string>('slide-in');
-    const [isRadioSelected, setIsRadioSelected] = useState<boolean>(false);
+    const [, setIsRadioSelected] = useState<boolean>(false);
     
     // state to track selected answers for each question
     const [selectedAnswers, setSelectedAnswers] = useState<{ [key: number]: string }>({});
