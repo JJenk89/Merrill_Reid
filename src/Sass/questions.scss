@@ -38,11 +38,7 @@ fieldset {
     opacity: 1;
 }
 
-@media screen and (min-width: 370px) {
-    fieldset {
-        padding: 1rem;
-    }
-}
+
 
 .slide-in {
     transform: translateX(100%); // Starts from the right
@@ -122,8 +118,7 @@ input[type="radio"] {
     margin: 1rem;
     padding: 0.5rem;
     line-height: 25px;
-    /* border: 1px solid $green;
-    border-radius: 5px; */
+   
 }
 
 .answer-letter {
@@ -166,4 +161,50 @@ button:disabled {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+}
+
+@media screen and (min-width: 370px) {
+    fieldset {
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 1280px) {
+    fieldset {
+        padding: 3rem;
+        max-width: 800px;
+        max-height: 900px;
+    }
+}
+@media screen and (min-width: 2000px) {
+
+    .question-wrapper {
+
+        h1 {
+            font-size: 3.5rem;
+        }
+        h4 {
+            font-size: 2rem;
+        }
+        
+    }
+    fieldset {
+        padding: 3rem;
+        width: 800px;
+        height: 600px;
+    }
+
+    .answer {
+        font-size: 1.8rem;
+        padding: 2rem;
+    }
+
+    .question-counter {
+        font-size: 1.8rem;
+    }
+
+    button {
+        height: 5rem;
+        width: 8rem;
+        font-size: 1.5rem;
+    }
 }

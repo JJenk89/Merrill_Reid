@@ -43,7 +43,7 @@ a:visited {
     align-items: center;
 
     h1, h3, p {
-        margin: 2rem 1rem;
+        margin: 0 1rem;
         text-align: center;
         max-width: 65ch;
         line-height: 24px;
@@ -54,12 +54,39 @@ a:visited {
         padding: 1rem;
         margin: 0 1rem;
         line-height: 24px;
+        max-width: 65ch;
     }
 
     p, ul {
         @include variables.box;
         border: 1px solid white;
         border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 750px), screen and (min-height: 800px) {
+    .type-description-container {
+    
+    
+        h1, h3, p {
+            margin: 0 auto;
+            text-align: center;
+            max-width: 65ch;
+            line-height: 24px;
+            padding: 3rem;
+        }
+    
+        ul {
+            padding: 2rem;
+            margin: 0 auto;
+            line-height: 24px;
+        }
+    
+        p, ul {
+            @include variables.box;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -89,29 +116,29 @@ a:visited {
     height: fit-content;
 }
 
-@media screen and (min-height: 700px) {
+@media screen and (min-height: 600px) {
     .analytical-bkg {
         background: url("../assets/analytical-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
         background-size: cover;
     background-blend-mode: multiply;
-        height: 100vh;
+        height: 115dvh;
     }
     .amiable-bkg {
         background: url("../assets/amiable-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
         background-size: cover;
     background-blend-mode: multiply;
-        height: 100vh;
+        height: 115dvh;
     }
     .driver-bkg {
         background: url("../assets/driver-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
         background-size: cover;
     background-blend-mode: multiply;
-        height: 100vh;
+        height: 115dvh;
     }
     .expressive-bkg {
         background: url("../assets/expressive-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
         background-size: cover;
     background-blend-mode: multiply;
-        height: 100vh;
+        height: 115dvh;
     }
 }
