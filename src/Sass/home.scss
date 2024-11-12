@@ -7,6 +7,7 @@
     align-items: center;
     max-width: 800px;
     margin: 5% auto;
+    height: 100dvh;
 
     h1 {
         font-size: 2.8rem;
@@ -26,7 +27,7 @@
 @media screen and (min-width: 700px), screen and (min-height: 1000px) {
     .home {
         max-width: 800px;
-        margin: 30% auto;
+        margin: 5% auto;
     
         h1 {
             font-size: 5rem;
@@ -39,7 +40,7 @@
         }
     
         button {
-            height: 6rem;
+            height: 5rem;
             width: 10rem;
             font-size: 1.5rem;
         }

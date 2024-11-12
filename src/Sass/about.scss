@@ -1,0 +1,22 @@
+@use "./variables";
+
+.about_wrapper {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+
+    section {
+        padding: 2rem;
+
+        h1, p {
+            padding: 1rem;
+        }
+    }
+}
+footer {
+    font-size: 12px;
+    line-height: 18px;
+}

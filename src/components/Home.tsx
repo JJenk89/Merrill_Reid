@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
-        <div className="home-bkg">
+        
+        <>
+            
             <div className="home">
-                <h1>Merill-Reid Test</h1>
+                <h1>Merrill-Reid Test</h1>
                 <p>
                 The Merrill-Reid test assesses personality types to improve communication and teamwork. It identifies four main styles: <strong>Analytical, Driver, Amiable, and Expressive</strong>. Understanding these types helps people interact better by tailoring communication strategies for different personalities.</p>
 
@@ -15,7 +17,8 @@ const Home = () => {
                 <p>Ready? Click the button below to begin!</p>
                 <Link to="/test"><button>Start Test</button></Link>
             </div>
-        </div>
+            <Link to="/about">About the app</Link>
+        </>
      );
 }
  
