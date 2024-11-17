@@ -1,6 +1,10 @@
 import "../Sass/app.scss";
+import { useNavigate} from "react-router-dom";
 
 const Amiable = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className="amiable-bkg">
             <div className="type-description-container">
@@ -21,6 +25,7 @@ const Amiable = () => {
                     <li>Use a more informal style of speaking and writing</li>
                 </ul>
             </div>
+            <button onClick={() => navigate(-1)}>Back</button> 
         </div>
      );
 }

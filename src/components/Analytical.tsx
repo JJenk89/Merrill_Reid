@@ -1,6 +1,11 @@
 import "../Sass/app.scss";
+import { useNavigate} from "react-router-dom";
+
 
 const Analytical = () => {
+
+    const navigate = useNavigate();
+
     return ( 
     <div className="analytical-bkg">
         <div className="type-description-container">
@@ -21,6 +26,9 @@ const Analytical = () => {
                     <li>Do not rush them</li>
                 </ul>
             </div>
+            
+            <button onClick={() => navigate(-1)}>Back</button> 
+
         </div>
      );
 }

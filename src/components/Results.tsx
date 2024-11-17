@@ -75,6 +75,9 @@ const Results: React.FC<ResultsProps> = ({ results }) => {
           );
         })}
       </div>
+
+        <Link to={"/Merrill_Reid/"}>Return Home</Link>
+
     </div>
   );
 };

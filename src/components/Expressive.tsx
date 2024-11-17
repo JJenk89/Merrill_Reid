@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import "../Sass/app.scss";
 
 const Expressive = () => {
+
+    const navigate = useNavigate();
+    
     return (
         <div className="expressive-bkg">
             <div className="type-description-container">
@@ -21,6 +25,9 @@ const Expressive = () => {
                     <li>When writing or presenting, start with a summary and then work towards details later</li>
                 </ul>
             </div>
+
+            <button onClick={() => navigate(-1)}>Back</button> 
+
         </div>
      );
 }

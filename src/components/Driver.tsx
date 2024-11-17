@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import "../Sass/app.scss";
 
 const Driver = () => {
+
+    const navigate = useNavigate();
+    
     return (
         <div className="driver-bkg">
             <div className="type-description-container">
@@ -21,6 +25,9 @@ const Driver = () => {
                     <li>Use visual aids</li>
                 </ul>
             </div>
+
+            <button onClick={() => navigate(-1)}>Back</button> 
+
         </div>
      );
 }
