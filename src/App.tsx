@@ -34,10 +34,13 @@ const ResultsWrapper = () => {
   return <Results results={results} />;
 };
 
-if (window.location.hostname.includes('github.io')) {
-  //GitHub Pages
-  document.head.querySelector('base')?.setAttribute('href', '/Merrill_Reid/');
-}
+const isGithubPages = window.location.hostname.includes('github.io');
+const baseUrl = isGithubPages 
+  ? 'https://jjenk89.github.io/Merrill_Reid/'
+  : 'https://merrill-reid.vercel.app/';
+
+document.querySelector('link[rel="canonical"]')?.setAttribute('href', baseUrl);
+document.querySelector('meta[property="og:url"]')?.setAttribute('content', baseUrl);
 
 const router = createBrowserRouter(
   createRoutesFromElements(
