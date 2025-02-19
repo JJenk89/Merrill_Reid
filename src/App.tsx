@@ -34,10 +34,15 @@ const ResultsWrapper = () => {
   return <Results results={results} />;
 };
 
+if (window.location.hostname.includes('github.io')) {
+  //GitHub Pages
+  document.head.querySelector('base')?.setAttribute('href', '/Merrill_Reid/');
+}
+
 const router = createBrowserRouter(
   createRoutesFromElements(
           <Route>   
-            <Route path="/Merrill_Reid" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/test" element={<Questions data={data}/>} errorElement={<Error />}/>
             <Route path="/results" element={<ResultsWrapper />} errorElement={<Error />}/>

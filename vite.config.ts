@@ -1,8 +1,12 @@
+// vite.config.ts
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  base: "/Merrill_Reid/",
-  plugins: [react()],
+export default defineConfig(({ mode }) => {
+  const isGithubPages = mode === 'github'
+  
+  return {
+    base: isGithubPages ? "/Merrill_Reid/" : "/",
+    plugins: [react()]
+  }
 })
