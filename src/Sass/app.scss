@@ -10,11 +10,12 @@
     padding: 0;
     box-sizing: border-box;
     text-wrap: balance;
+
 }
 
 #root {
-    height: 100%;
-    width: 100vw;
+    overflow:hidden;
+
 }
 
 body {
@@ -24,7 +25,6 @@ body {
     background-size: cover;
     background-blend-mode: multiply;
     color: white;
-    height: 100%;
 }
 
 a {

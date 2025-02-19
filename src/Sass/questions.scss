@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
     margin: 0 auto;
 
     h1 {
@@ -176,6 +175,11 @@ legend {
     }
 }
 @media screen and (min-width: 1280px) {
+
+    .question-wrapper {
+        max-width: 800px;
+    }
+    
     fieldset {
         padding: 3rem;
         max-width: 800px;
