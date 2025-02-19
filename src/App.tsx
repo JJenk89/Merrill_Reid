@@ -3,6 +3,7 @@ import "./Sass/app.scss";
 
 //components
 import Error from "./components/ErrorPage";
+import { Analytics } from "@vercel/analytics/react"
 
 
 //pages
@@ -54,6 +55,7 @@ function App() {
   return (
     <>
           <RouterProvider router={router} />
+          <Analytics />
     </>
   )
 }

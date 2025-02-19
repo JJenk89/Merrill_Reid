@@ -7,10 +7,11 @@
     align-items: center;
     max-width: 800px;
     margin: 5% auto;
-    height: 100dvh;
+    height: 100%;
 
     h1 {
         font-size: 2.8rem;
+        margin-top: 4rem;
     }
     p {
         margin: 2.5rem auto;
@@ -21,8 +22,13 @@
     button {
         height: 4rem;
         width: 8rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.1rem;
     }
+  
 }
+
+
 
 @media screen and (min-width: 700px), screen and (min-height: 1000px) {
     .home {

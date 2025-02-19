@@ -6,8 +6,11 @@ const Home = () => {
     return (
         
         <>
+            <div className="about-link">
+                <Link to="/about">About the app</Link>
+            </div>
             
-            <div className="home">
+            <main className="home">
                 <h1>Merrill-Reid Test</h1>
                 <p>
                 The Merrill-Reid test assesses personality types to improve communication and teamwork. It identifies four main styles: <strong>Analytical, Driver, Amiable, and Expressive</strong>. Understanding these types helps people interact better by tailoring communication strategies for different personalities.</p>
@@ -16,8 +19,8 @@ const Home = () => {
 
                 <p>Ready? Click the button below to begin!</p>
                 <Link to="/test"><button>Start Test</button></Link>
-            </div>
-            <Link to="/about">About the app</Link>
+            </main>
+            
         </>
      );
 }

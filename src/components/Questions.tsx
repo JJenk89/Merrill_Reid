@@ -120,55 +120,59 @@ const Questions = ({data}: QType) => {
                 <form>
                     <div className="question">
                         <fieldset className={`animated-fieldset ${animationClass}`}>
-                            <h4>{question.name}</h4>
+                            <legend>{question.name}</legend>
                             <div className="radio-set">
                                 <div className="answer">
                                     <input 
                                         type="radio" 
-                                        id="A" 
+                                        id={`A-${index}`}
                                         name={question.name} 
                                         value={question.values.a} 
                                         onChange={handleRadioChange}
                                         checked={selectedAnswers[index] === question.values.a}
+                                        aria-labelledby={`label-A-${index}`}
                                     /> 
-                                    <span className="answer-letter">A:</span> 
-                                    <label htmlFor="A">{question.answers.a}</label>
+                                    <span className="answer-letter" id={`letter-A-${index}`}>A:</span> 
+                                    <label htmlFor={`A-${index}`} id={`label-A-${index}`}>{question.answers.a}</label>
                                 </div>
                                 <div className="answer">
                                     <input 
                                         type="radio" 
-                                        id="B" 
+                                        id={`B-${index}`} 
                                         name={question.name} 
                                         value={question.values.b} 
                                         onChange={handleRadioChange}
                                         checked={selectedAnswers[index] === question.values.b}
+                                        aria-labelledby={`label-B-${index}`}
                                     /> 
-                                    <span className="answer-letter">B:</span> 
-                                    <label htmlFor="B">{question.answers.b}</label>
+                                    <span className="answer-letter" id={`letter-B-${index}`}>B:</span> 
+                                    <label htmlFor={`B-${index}`} id={`label-B-${index}`}>{question.answers.b}</label>
                                 </div>
                                 <div className="answer">
                                     <input 
                                         type="radio" 
-                                        id="C" 
+                                        id={`C-${index}`}
                                         name={question.name} 
                                         value={question.values.c} 
                                         onChange={handleRadioChange}
                                         checked={selectedAnswers[index] === question.values.c}
+                                        aria-labelledby={`label-C-${index}`}
                                     /> 
-                                    <span className="answer-letter">C:</span> 
-                                    <label htmlFor="C">{question.answers.c}</label>
+                                    <span className="answer-letter" id={`letter-C-${index}`}>C:</span> 
+                                    <label htmlFor={`C-${index}`} id={`label-C-${index}`}>{question.answers.c}</label>
                                 </div>
                                 <div className="answer">
                                     <input 
                                         type="radio" 
-                                        id="D" 
+                                        id={`D-${index}`}
                                         name={question.name} 
                                         value={question.values.d} 
                                         onChange={handleRadioChange}
                                         checked={selectedAnswers[index] === question.values.d}
+                                        aria-labelledby={`label-D-${index}`}
                                     /> 
-                                    <span className="answer-letter">D:</span> 
-                                    <label htmlFor="D">{question.answers.d}</label>
+                                    <span className="answer-letter" id={`letter-D-${index}`}>D:</span> 
+                                    <label htmlFor={`D-${index}`} id={`label-D-${index}`}>{question.answers.d}</label>
                                 </div>
                             </div>
                         </fieldset>
