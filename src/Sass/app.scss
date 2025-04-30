@@ -80,6 +80,8 @@ a:visited {
             padding: 2rem;
             margin: 1rem auto;
             line-height: 24px;
+            width: 700px;
+            width: moz-available;
         }
     
         p, ul {
@@ -121,24 +123,20 @@ a:visited {
         background: url("../assets/analytical-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
         background-size: cover;
     background-blend-mode: multiply;
-        height: 115dvh;
     }
     .amiable-bkg {
         background: url("../assets/amiable-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
         background-size: cover;
     background-blend-mode: multiply;
-        height: 115dvh;
     }
     .driver-bkg {
         background: url("../assets/driver-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
         background-size: cover;
     background-blend-mode: multiply;
-        height: 115dvh;
     }
     .expressive-bkg {
         background: url("../assets/expressive-sm.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
         background-size: cover;
     background-blend-mode: multiply;
-        height: 115dvh;
     }
 }
