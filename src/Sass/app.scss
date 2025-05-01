@@ -13,18 +13,19 @@
 
 }
 
-#root {
+/* #root {
     overflow:hidden;
 
-}
+} */
 
 body {
     font-family: variables.$font;
     background-color: rgba(38, 37, 37, 0.63);
-    background: url("../assets/background.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
+    background: url("/src/assets/background.jpg") rgba(38, 37, 37, 0.93) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
     color: white;
+    height: 100%;
 }
 
 a {
@@ -41,6 +42,7 @@ a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 
     h1, h3, p {
         margin: 0 1rem;
@@ -80,8 +82,8 @@ a:visited {
             padding: 2rem;
             margin: 1rem auto;
             line-height: 24px;
-            width: 700px;
-            width: moz-available;
+            max-width: 700px;
+            max-width: moz-available;
         }
     
         p, ul {
@@ -97,25 +99,26 @@ a:visited {
     background: url("../assets/analytical.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: fit-content;
+    height: 100vh;
+    padding: 1rem;
 }
 .amiable-bkg {
     background: url("../assets/amiable.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: fit-content;
+    height: 100vh;
 }
 .driver-bkg {
     background: url("../assets/driver.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: fit-content;
+    height: 100vh;
 }
 .expressive-bkg {
     background: url("../assets/expressive.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: fit-content;
+    height: 100vh;
 }
 
 @media screen and (min-height: 600px) {
