@@ -99,26 +99,32 @@ a:visited {
     background: url("../assets/analytical.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: 100vh;
+    height: clamp(100vh, 100%, 100%);
     padding: 1rem;
 }
 .amiable-bkg {
     background: url("../assets/amiable.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: 100vh;
+    height: clamp(100vh, 100%, 100%);
+    padding: 1rem;
+
 }
 .driver-bkg {
     background: url("../assets/driver.jpg") rgba(38, 37, 37, 0.63) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: 100vh;
+    height: clamp(100vh, 100%, 100%);
+    padding: 1rem;
+
 }
 .expressive-bkg {
     background: url("../assets/expressive.jpg") rgba(38, 37, 37, 0.83) no-repeat center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    height: 100vh;
+    height: clamp(100vh, 100%, 100%);
+    padding: 1rem;
+
 }
 
 @media screen and (min-height: 600px) {
