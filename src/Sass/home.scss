@@ -30,27 +30,34 @@
 
 
 
-@media screen and (min-width: 700px), screen and (min-height: 1000px) {
+@media screen and (min-width: 700px) {
     .home {
         max-width: 800px;
-        margin: 5% auto;
+        margin: 1% auto;
     
         h1 {
-            font-size: 5rem;
+            font-size: 4rem;
         }
         p {
             margin: 2.5rem auto;
             line-height: 40px;
             text-align: center;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
     
         button {
-            height: 5rem;
+            height: 4rem;
             width: 10rem;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
     }
 
 
+}
+
+@media screen and (min-width: 1200px) {
+    .home {
+        max-width: 1000px;
+        margin: 1% auto;
+    }
 }
