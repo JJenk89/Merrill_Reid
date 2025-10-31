@@ -3,7 +3,6 @@ import "./Sass/app.scss";
 
 //components
 import Error from "./components/ErrorPage";
-import { Analytics } from "@vercel/analytics/react"
 
 
 //pages
@@ -34,18 +33,15 @@ const ResultsWrapper = () => {
   return <Results results={results} />;
 };
 
-const isGithubPages = window.location.hostname.includes('github.io');
-const baseUrl = isGithubPages 
-  ? 'https://jjenk89.github.io/Merrill_Reid/'
-  : 'https://merrill-reid.vercel.app/';
+/* const isGithubPages = window.location.hostname.includes('github.io');
 
-document.querySelector('link[rel="canonical"]')?.setAttribute('href', baseUrl);
-document.querySelector('meta[property="og:url"]')?.setAttribute('content', baseUrl);
+document.querySelector('link[rel="canonical"]')?.setAttribute('href', isGithubPages ? 'https://jjenk89.github.io/Merrill_Reid/' : 'https://localhost:5173/');
+document.querySelector('meta[property="og:url"]')?.setAttribute('content', isGithubPages ? 'https://jjenk89.github.io/Merrill_Reid/' : 'https://localhost:5173/'); */
 
 const router = createBrowserRouter(
   createRoutesFromElements(
           <Route>   
-            <Route path="/" element={<Home />} />
+            <Route path="/Merrill_Reid" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/test" element={<Questions data={data}/>} errorElement={<Error />}/>
             <Route path="/results" element={<ResultsWrapper />} errorElement={<Error />}/>
@@ -63,7 +59,6 @@ function App() {
   return (
     <>
           <RouterProvider router={router} />
-          <Analytics />
     </>
   )
 }
